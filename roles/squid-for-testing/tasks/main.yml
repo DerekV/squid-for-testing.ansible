@@ -1,0 +1,18 @@
+---
+
+
+# Installs squid
+- name: Install squid
+  apt:
+    name: squid3
+    state: present
+  notify: restart squid
+  become: yes
+
+# TODO ... produce a custom squid.conf
+# - name: Copy squid configuration
+#   file:
+#     src: squid.conf
+#     dest: /etc/squid3/squid.conf
+#   notify: restart squid
+#   become: yes

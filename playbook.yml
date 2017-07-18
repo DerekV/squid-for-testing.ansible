@@ -1,0 +1,7 @@
+---
+
+
+# Creates an simple install of squid that can be used for testing.
+- hosts: proxy-boxes-for-testing
+  roles:
+    - role: squid-for-testing
